@@ -34,3 +34,37 @@ function dejarPasar(edad) {
 		return false
 	}
 }
+
+// tarea 4 IF
+
+function resultadoDeExamen(notaDeExamen) {
+	if (notaDeExamen<4) {
+		return 'aplazado'
+	} else if (notaDeExamen>=4 && notaDeExamen<=6) {
+		return 'aRecuperar'
+	} else if (notaDeExamen>6 && notaDeExamen<10) {
+		return 'aprobado'
+	} else (notaDeExamen=10) 
+		return 'sobresaliente'	
+}
+
+const persona1 = {
+	madre1: 'madre',
+	padre1: 'padre',
+}
+const persona2 = {
+	madre2: 'madre',
+	padre2: 'padre',
+}
+
+function sonHermanos(persona1, persona2) {
+	if (persona1.madre1 && persona1.padre1 === persona2.madre2 && persona2.padre2) {
+		return true
+	}
+}
+
+function contarEspacios(texto) {
+	return texto.search((' '))
+}
+
+contarEspacios('Hola mi amor, quiero saber si llegaste.')
