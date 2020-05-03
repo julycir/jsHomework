@@ -57,7 +57,7 @@ const persona2 = {
 	padre2: 'padre',
 }
 
-function sonHermanos(persona1, persona2) {
+function sonHermanos('persona1', 'persona2') {
 	if (persona1.madre1 && persona1.padre1 === persona2.madre2 && persona2.padre2) {
 		return true
 	}
@@ -68,3 +68,24 @@ function contarEspacios(texto) {
 }
 
 contarEspacios('Hola mi amor, quiero saber si llegaste.')
+
+// tarea 5 INVESTIGAR
+
+const nombreComida = {
+	nombre: 'nombreComida',
+	listaDeIngredientes: ['ingrediente1', 'ingrediente2', 'ingrediente3'],
+}
+
+function obtenerRecetaPorIngrediente(listaDeComidas, nombreIngrediente) {
+	if (nombreComida.listaDeIngredientes.includes(nombreIngrediente)) {
+		return nombreComida
+	}	
+}
+
+function obtenerRecetaPorIngredientes(listaDeComidas, listaDeIngredientes) {
+	if (nombreComida.includes(listaDeIngredientes)) {
+		return nombreComida
+	}	
+}
+
+
